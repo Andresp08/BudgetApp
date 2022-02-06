@@ -1,10 +1,21 @@
 import { useState } from 'react'
+import  Header from './components/Header';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = ()  => {
+
+  //Hooks
+  const [presupuesto, setPresupuesto] = useState(0);
+  const [isValidPresupuesto, setIsValidPresupuesto] = useState(false);
 
   return (
-    <h1>Control de Gatos</h1>
+    <div>
+      <Header 
+        presupuesto={presupuesto}
+        setPresupuesto={setPresupuesto}
+        isValidPresupuesto={isValidPresupuesto}
+        setIsValidPresupuesto={setIsValidPresupuesto}
+      />
+    </div>
   )
 }
 
