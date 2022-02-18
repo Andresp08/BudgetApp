@@ -30,7 +30,6 @@ const Header = ({
                     setIsValidPresupuesto={setIsValidPresupuesto}
                 />
             )}
-            
         </header>
     )
 }
